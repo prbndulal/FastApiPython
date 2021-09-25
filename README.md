@@ -1,6 +1,6 @@
  ## PIZZA DELIVERY API
-This is a REST API for a Pizza delivery service built for fun and learning with FastAPI, SQLAlchemy and PostgreSQL. The video playlist is 
-[here](https://www.youtube.com/playlist?list=PLEt8Tae2spYnLMAf8RGCNYhovIFZHVsPP)
+This is a REST API for a Pizza delivery service built for fun and learning with FastAPI, SQLAlchemy and Mssql
+
 
 
 ## ROUTES TO IMPLEMENT
@@ -26,7 +26,7 @@ This is a REST API for a Pizza delivery service built for fun and learning with 
 - Install the requirements with ``` pip install -r requirements.txt ```
 - Set Up your PostgreSQL database and set its URI in your ```database.py```
 ```
-engine=create_engine('postgresql://postgres:<username>:<password>@localhost/<db_name>',
+engine=create_engine('mssql+pymssql://<username>:<password>@<servername>/<databasename>',
     echo=True
 )
 ```

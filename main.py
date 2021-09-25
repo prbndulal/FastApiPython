@@ -1,16 +1,18 @@
-from typing import Optional
+ 
 from fastapi import FastAPI
+from auth_routes import auth_router
+from order_routes import order_router
+from fastapi_jwt_auth import AuthJWT
+from schemas import Settings
 
 app=FastAPI()
 
+@AuthJWT.load_config
+def get_config():
+    return Settings()
 
 
-#p@app. is pathoperation decorator 
-@app.get('/')# path inside operation
-async def index():# path operation function
-    return {'data':{'name':'prabin'}}
+app.include_router(auth_router)
+app.include_router(order_router)
 
-
-@app.get('/about')
-async def about():
-    return {'data':'about page'}
+ 

@@ -1,2 +1,8 @@
 fastapi
 uvicorn
+sqlalchemy
+sqlalchemy_utils
+pandas
+requests
+pymssql
+werkzeug

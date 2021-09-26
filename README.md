@@ -3,7 +3,7 @@ This is a REST API for a Pizza delivery service built for fun and learning with 
 
 
 
-## ROUTES TO IMPLEMENT
+## ROUTES IMPLEMENTED
 | METHOD | ROUTE | FUNCTIONALITY |ACCESS|
 | ------- | ----- | ------------- | ------------- |
 | *POST* | ```/auth/signup/``` | _Register new user_| _All users_|

@@ -33,3 +33,5 @@ engine=create_engine('sqlite:///./pizza_delivery.db',
 - Create your database by running ``` python init_db.py ```
 - Finally run the API
 ``` uvicorn main:app ``
+### Hosted in heroku
+-[https://pizzadeliveryfastapi-pd.herokuapp.com/docs]

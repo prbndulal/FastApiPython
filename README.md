@@ -19,14 +19,13 @@ This is a REST API for a Pizza delivery service built for fun and learning with 
 | *GET* | ```/docs/``` | _View API documentation_|_All users_|
 
 ## How to run the Project
-- Install Mssql
 - Install Python
 - Git clone the project with ``` git clone https://github.com/prbndulal/FastApiPython.git```
 - Create your virtualenv with `Pipenv` or `virtualenv` and activate it.
 - Install the requirements with ``` pip install -r requirements.txt ```
-- Set Up your PostgreSQL database and set its URI in your ```database.py```
+- Set Up your  database and set its URI in your ```database.py```
 ```
-engine=create_engine('mssql+pymssql://<username>:<password>@<servername>/<databasename>',
+engine=create_engine('sqlite:///./pizza_delivery.db',
     echo=True
 )
 ```
